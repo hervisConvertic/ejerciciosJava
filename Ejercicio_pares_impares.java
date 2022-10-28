@@ -25,7 +25,7 @@ public class Ejercicio_pares_impares {
             do {
                 Random rnd = new Random();
                 numero = rnd.nextInt(50);
-            } while (numero % 2 != 0);
+            } while (numero % 2 != 0 || numero == 0);
             pares[i] = numero;
             System.out.println("par " + pares[i]);
         }
@@ -33,7 +33,7 @@ public class Ejercicio_pares_impares {
             do {
                 Random rnd = new Random();
                 numero = rnd.nextInt(50);
-            } while (numero % 2 == 0);
+            } while (numero % 2 == 0 || numero == 0);
             impares[i] = numero;
             System.out.println("impar " + impares[i]);
         }
