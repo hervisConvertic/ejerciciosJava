@@ -53,7 +53,7 @@ public class Ejercicio_pares_impares {
                 } while (condicion_par.equals("si"));
             }
 
-            //ingresa numero impar
+            //ingresa numero  impar
             if (b < z) {
                 do {
                     total[con_total] = impares[b];
