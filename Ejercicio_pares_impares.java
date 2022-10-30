@@ -11,10 +11,17 @@ public class Ejercicio_pares_impares {
         String condicion_impar = "si";
         int numero, n, z, j, a = 0, b = 0, con_total = 0;
         Scanner consola = new Scanner(System.in);
-        System.out.println("ingrese la cantidad n");
-        n = consola.nextInt();
-        System.out.println("ingrese la cantidad z");
-        z = consola.nextInt();
+
+        do{
+            System.out.println("ingrese la cantidad n de numeros pares mayores de 0");
+            n = consola.nextInt();
+        }while (n<0);
+        do{
+            System.out.println("ingrese una cantidad z de numeros impares mayores de 0");
+            z = consola.nextInt();
+        }while (z<0);
+
+
         j = n + z;
 
         int[] pares = new int[n];
@@ -37,7 +44,7 @@ public class Ejercicio_pares_impares {
             impares[i] = numero;
             System.out.println("impar " + impares[i]);
         }
-
+        System.out.println("vector total: ");
         while (con_total < j) {
             condicion_par = "si";
             condicion_impar = "si";
